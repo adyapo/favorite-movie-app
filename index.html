@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-heading">
+  <h1>Movie List</h1>
+  <p>"Movie List" este o aplicație web destinată pasionaților de cinema. Permite utilizatorilor să creeze o listă personalizată cu filmele lor preferate, oferind posibilitatea de a adăuga detalii precum titlu, descriere, anul lansării, rating și imagine pentru fiecare film. De asemenea, "Movie List" include funcționalități de căutare, sortare și afișare a filmelor în diferite moduri, pentru a facilita gestionarea listei de filme. Prin integrarea cu API-ul OMDb, utilizatorii pot obține și adăuga rapid informații despre un film în lista lor.</p>
+</div class="form-container">
+<form id="movie-form">
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title" required>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" required></textarea>
+
+  <label for="image">Image URL:</label>
+  <input type="text" id="image" name="image" required>
+
+  <label for="year">Year:</label>
+  <input type="number" id="year" name="year" required>
+
+  <label for="rating">Rating:</label>
+  <input type="number" id="rating" name="rating" min="0" max="10" step="0.1" required>
+
+  <label for="dateAdded">Date Added:</label>
+  <input type="date" id="dateAdded" name="dateAdded" required>
+
+  <button type="submit">Add movie</button>
+</form>
+
+<button id="toggle-display">Toggle Display</button>
+
+<div class="search-sort">
+  <label for="search">Search:</label>
+  <input type="text" id="search" name="search">
+
+  <label for="sort">Sort by:</label>
+  <select id="sort" name="sort">
+    <option value="">Select...</option>
+    <option value="name-asc">Name Ascending</option>
+    <option value="name-desc">Name Descending</option>
+    <option value="year-asc">Year Ascending</option>
+    <option value="year-desc">Year Descending</option>
+    <option value="rating-asc">Rating Ascending</option>
+    <option value="rating-desc">Rating Descending</option>
+    <option value="date-asc">Date Added Ascending</option>
+    <option value="date-desc">Date Added Descending</option>
+  </select>
+</div>
+
+<table id="movie-list">
+  <thead>
+  <tr>
+    <th>Image</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Year</th>
+    <th>Rating</th>
+    <th>Date Added</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* Stilizare generală */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Stilizare formular */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%; /* Adăugați această linie */
+  margin-left: auto; /* Adăugați această linie */
+  margin-right: auto; /* Adăugați această linie */
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input[type=text], form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type=text] {
+  width: 100%;
+}
+
+form select {
+  width: 150px;
+}
+
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  height: 100px;
+}
+
+form button {
+  background-color: #0069d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0053a3;
+}
+
+/* Stilizare listă de filme */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+li img, td img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+li h2 {
+  margin-top: 0;
+}
+
+li p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+li .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+li .actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+li .actions button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+li .actions button:hover {
+  background-color: #c82333;
+}
+
+/* Stilizare tabel de filme */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #f8f9fa;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #dee2e6;
+  }
+  
+  td {
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px;
+  }
+  
+  tr {
+  height: 150px;
+  }
+
+  .form-container {
+    height: 50vh; /* Setăm înălțimea containerului la 50% din înălțimea vizibilă a ecranului */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
